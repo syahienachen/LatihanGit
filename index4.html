@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Slick Banner</title>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Our CSS -->
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: #dedede;
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 15px;
+            background-color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .slider .slick-slide {
+            border: solid 1px #000;
+        }
+
+        .slider .slick-slide img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Slick Slider</h1>
+        <p>
+            Hello. Look at beautiful laptops below!
+        </p>
+        <div class="slider">
+            <div>
+                <a href="#">
+                    <img src="img/bryan-pelayo-GD_ETGamDTs-unsplash.jpg" alt="Image 1">
+                </a>            
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/unsplash-NuFUbftUu_s-unsplash.jpg" alt="Image 2">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/microsoft-edge-LXjbmtqn6lg-unsplash.jpg" alt="Image 3">
+                </a>            
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/windows-C6T6vr1sQI0-unsplash.jpg" alt="Image 4">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/xps-yNvVnPcurD8-unsplash.jpg" alt="Image 5">
+                </a>            
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Slick JS -->    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Our Script -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 2500,
+            dots: true
+            });
+        });
+    </script>
+
+</body>
+</html>
